@@ -17,5 +17,6 @@ int main(){
             continue;
         }
     }
-    printf("%d",gdc)
+    printf("the greatest common divisor of both numbers is %d",gdc);
+    return 0;
 }
