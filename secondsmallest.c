@@ -18,5 +18,5 @@ int main(){
             second=arr[i];
         }
     }
-    printf("the second smallest element of array : %d",smallest);
+    printf("the second smallest element of array : %d",second);
 }
