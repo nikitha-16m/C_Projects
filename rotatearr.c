@@ -1,4 +1,14 @@
 #include <stdio.h>
+int temp;
+int rev(int arr[6],int n,int p){
+        while(n<p){
+            temp=arr[n];
+            arr[n]=arr[p];
+            arr[p]=temp;
+            n++;
+            p--;
+        }
+    }
 int main(){
     int arr[6];
     int len=sizeof(arr)/sizeof(arr[0]);
@@ -12,16 +22,6 @@ int main(){
     scanf("%d",&k);
     if(k>len){
         k%=len;
-    }
-    int temp;
-    int rev(int arr[6],int n,int p){
-        while(n<p){
-            temp=arr[n];
-            arr[n]=arr[p];
-            arr[p]=temp;
-            n++;
-            p--;
-        }
     }
     rev(arr,0,k-1);
     rev(arr,k,len-1);
